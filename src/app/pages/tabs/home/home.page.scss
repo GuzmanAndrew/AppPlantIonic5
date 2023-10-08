@@ -17,8 +17,9 @@ ion-header {
     }
     .popover {
         margin: 0 8px;
-        ion-searchbar {
-            --border-radius: 20px;
+        ion-card {
+            border-radius: 11px;
+            text-align: center;
             margin-top: -30px;
         }
     }
@@ -33,7 +34,7 @@ ion-content {
     }
     ion-slides {
         ion-card {
-            height: 30vh;
+            height: 22vh;
             width: 100%;
             border-radius: 10px;
             ion-card-header {
@@ -45,12 +46,12 @@ ion-content {
             }
             ion-card-content {
                 img {
-                    height: 20vh;
+                    height: 10vh;
                 }
             }
         }
         .bgCard {
-            background-image: url('../../../../assets/imgs/bg.png');
+            /* background-image: url('../../../../assets/imgs/bg3.jpg'); */
             background-position: fixed;
             background-repeat: no-repeat;
             background-size: contain;

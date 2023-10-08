@@ -1,58 +1,125 @@
+<ion-header class="ion-no-border">
+  <ion-list lines="none">
+    <ion-button fill="clear" class="ion-margin" (click)="navCtrl.back()">
+      <ion-icon slot="icon-only" name="arrow-back" color="dark"></ion-icon>
+    </ion-button>
+  </ion-list>
+  <div class="popover">
+    <ion-card>
+      <ion-card-content>
+        <apx-chart></apx-chart>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-header>
+
 <ion-content [fullscreen]="true">
 
-  <ion-grid>
-    <ion-row>
-      <ion-col size="3">
-        <ion-button fill="clear" class="ion-margin" (click)="navCtrl.back()">
-          <ion-icon slot="icon-only" name="arrow-back" color="dark"></ion-icon>
-        </ion-button>
+  <ion-list class="ion-margin">
+    <ion-item lines="none">
+      <ion-label class="title">Guardar presión arterial:</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Enter Username" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Enter Password" type="text"></ion-input>
+    </ion-item>
+  </ion-list>
 
-        <div>
-          <ion-button color="primary-contrast" class="ion-margin">
-            <ion-icon slot="icon-only" name="sunny" color="primary"></ion-icon>
-          </ion-button>
-          <ion-button color="primary-contrast" class="ion-margin">
-            <ion-icon slot="icon-only" name="thermometer-outline" color="primary"></ion-icon>
-          </ion-button>
-          <ion-button color="primary-contrast" class="ion-margin">
-            <ion-icon slot="icon-only" name="water-outline" color="primary"></ion-icon>
-          </ion-button>
-          <ion-button color="primary-contrast" class="ion-margin">
-            <ion-icon slot="icon-only" name="snow-outline" color="primary"></ion-icon>
-          </ion-button>
-        </div>
-      </ion-col>
-      <ion-col size="9">
-        <ion-slides pager="true">
-          <ion-slide *ngFor="let item1 of [1, 2]">
-            <img [src]="item?.img" />
-          </ion-slide>
-        </ion-slides>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-list class="ion-margin ion-text-center">
+    <ion-button expand="block" shape="round">Guardar dato</ion-button>
+  </ion-list>
 
-  <ion-item lines="none" class="ion-margin-vertical">
-    <ion-label>
-      {{item?.name}}
-      <p><ion-text color="tertiary">{{item?.category}}</ion-text></p>
-    </ion-label>
-    <ion-text class="price" color="primary" slot="end">
-      <b>₹{{item?.price}}</b>
-    </ion-text>
+  <ion-item lines="none">
+    <ion-label class="title">Datos presión arterial:</ion-label>
+  </ion-item>
+
+  <ion-item lines="none">
+    <table class="custom-table">
+      <thead>
+        <tr class="custom-table-header">
+          <th>Valor</th>
+          <th>Fecha - Hora</th>
+          <th>Rango</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>120/30</td>
+          <td>07/10/2013 18:32</td>
+          <td>
+            <ion-chip color="success">
+              <ion-label>Normal</ion-label>
+            </ion-chip>
+          </td>
+        </tr>
+        <tr>
+          <td>190/100</td>
+          <td>07/10/2013 21:10</td>
+          <td>
+            <ion-chip color="danger">
+              <ion-label>Anormal</ion-label>
+            </ion-chip>
+          </td>
+        </tr>
+        <tr>
+          <td>190/100</td>
+          <td>07/10/2013 21:10</td>
+          <td>
+            <ion-chip color="danger">
+              <ion-label>Anormal</ion-label>
+            </ion-chip>
+          </td>
+        </tr>
+        <tr>
+          <td>190/100</td>
+          <td>07/10/2013 21:10</td>
+          <td>
+            <ion-chip color="danger">
+              <ion-label>Anormal</ion-label>
+            </ion-chip>
+          </td>
+        </tr>
+        <tr>
+          <td>190/100</td>
+          <td>07/10/2013 21:10</td>
+          <td>
+            <ion-chip color="danger">
+              <ion-label>Anormal</ion-label>
+            </ion-chip>
+          </td>
+        </tr>
+        <tr>
+          <td>190/100</td>
+          <td>07/10/2013 21:10</td>
+          <td>
+            <ion-chip color="danger">
+              <ion-label>Anormal</ion-label>
+            </ion-chip>
+          </td>
+        </tr>
+        <tr>
+          <td>190/100</td>
+          <td>07/10/2013 21:10</td>
+          <td>
+            <ion-chip color="danger">
+              <ion-label>Anormal</ion-label>
+            </ion-chip>
+          </td>
+        </tr>
+        <tr>
+          <td>190/100</td>
+          <td>07/10/2013 21:10</td>
+          <td>
+            <ion-chip color="danger">
+              <ion-label>Anormal</ion-label>
+            </ion-chip>
+          </td>
+        </tr>
+        <!-- Agrega más filas según tus datos -->
+      </tbody>
+    </table>
   </ion-item>
 
 </ion-content>
-
-<ion-footer class="ion-no-border">
-  <ion-toolbar>
-    <ion-row>
-      <ion-col size="6" class="ion-text-center buy">
-        <ion-button fill="clear" color="light">Buy Now</ion-button>
-      </ion-col>
-      <ion-col size="6" class="ion-text-center">
-        <ion-button fill="clear" color="dark">Description</ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-toolbar>
-</ion-footer>

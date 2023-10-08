@@ -6,9 +6,10 @@ import { Injectable } from '@angular/core';
 export class ApiService {
 
   items: any[] = [
-    { id: 1, name: 'Aloe Plant', price: 700, category: 'INDIA', img: 'assets/imgs/aloe.png' },
-    { id: 2, name: 'Echeveria', price: 500, category: 'INDIA', img: 'assets/imgs/2.png' },
-    { id: 3, name: 'Snake Plant', price: 700, category: 'USA', img: 'assets/imgs/3.png' },
+    { id: 1, name: 'Presión arterial', img: 'assets/imgs/blood-donation.png' },
+    { id: 2, name: 'Frecuencia cardiaca', img: 'assets/imgs/heart-rate.png' },
+    { id: 3, name: 'Temperatura corporal', img: 'assets/imgs/thermometer.png' },
+    { id: 5, name: 'Oxigenacion en sangre', img: 'assets/imgs/red-blood-cells.png' },
   ];
 
   constructor() { }

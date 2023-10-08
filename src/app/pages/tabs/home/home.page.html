@@ -1,17 +1,26 @@
 <ion-header class="ion-no-border">
   <ion-list lines="none">
-    <ion-item color="primary">
+    <!-- <ion-item color="primary">
       <ion-icon slot="start" name="reorder-two"></ion-icon>
-    </ion-item>
+    </ion-item> -->
+    <br>
     <ion-item color="primary">
-      <ion-label>Hi Technyks</ion-label>
+      <ion-label>Hola Andrew Ramirez</ion-label>
       <ion-avatar slot="end">
-        <img src="assets/imgs/nature love.png" />
+        <img src="assets/imgs/profile.jpeg" />
       </ion-avatar>
     </ion-item>
   </ion-list>
   <div class="popover">
-    <ion-searchbar></ion-searchbar>
+    <ion-card>
+      <ion-card-content>
+        Su estado de salud en general es:
+        <br>
+        <ion-chip color="success">
+          <ion-label>Normal</ion-label>
+        </ion-chip>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-header>
 
@@ -19,8 +28,8 @@
 
   <ion-grid class="ion-margin-top">
     <ion-item lines="none" color="light">
-      <ion-label class="title">Popular</ion-label>
-      <ion-button slot="end" size="small" shape="round" color="primary">View all</ion-button>
+      <ion-label class="title">Datos fisiológicos</ion-label>
+      <!-- <ion-button slot="end" size="small" shape="round" color="primary">View all</ion-button> -->
     </ion-item>
     <ion-row>
       <ion-slides [options]="slideOpts">
@@ -29,7 +38,6 @@
             <ion-card-header>
               <ion-label>
                 {{item?.name}}
-                <p>₹{{item?.price}}</p>
               </ion-label>
             </ion-card-header>
             <ion-card-content>
@@ -41,7 +49,7 @@
     </ion-row>
   </ion-grid>
 
-  <ion-grid class="ion-margin-top">
+  <!-- <ion-grid class="ion-margin-top">
     <ion-item lines="none" color="light">
       <ion-label class="title">Featured Plants</ion-label>
       <ion-button slot="end" size="small" shape="round" color="primary">View all</ion-button>
@@ -51,7 +59,7 @@
         <ion-slide *ngFor="let item of featuredItems">
           <ion-card class="featured" [routerLink]="['/', 'tabs', 'items', item.id]">
             <ion-card-header>
-              <img [src]="item?.img" />              
+              <img [src]="item?.img" />
             </ion-card-header>
             <ion-card-content>
               <ion-item lines="none">
@@ -66,6 +74,6 @@
         </ion-slide>
       </ion-slides>
     </ion-row>
-  </ion-grid>
+  </ion-grid> -->
 
 </ion-content>

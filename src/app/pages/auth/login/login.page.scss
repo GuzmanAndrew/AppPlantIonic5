@@ -1,7 +1,7 @@
 #bg {
     height: 50%;
     width: 500px;
-    background: var(--ion-color-dark) url('../../../../assets/imgs/leaves.jpg') no-repeat center center/cover;
+    background: var(--ion-color-dark) url('../../../../assets/imgs/bg3.jpg') no-repeat center center/cover;
     border-radius: 0 0 45% 45%;
     margin-left: -21vw;
     position: relative;
@@ -25,6 +25,10 @@ ion-list {
         -moz-box-shadow: 0 6px 4px -4px var(--ion-color-medium);
         box-shadow: 0 6px 4px -4px var(--ion-color-medium);
     }
+    ion-button {
+        font-weight: bold;
+        color: black !important;
+      }
     p {
         font-size: 0.8rem;
         padding-left: 5vw;
